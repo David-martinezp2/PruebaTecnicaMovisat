@@ -1,0 +1,18 @@
+<div id="map" style="height: 400px;"></div>
+<button id="show-clients-btn" style="margin-top: 10px;">Ver Clientes</button>
+<button id="show-create-client-btn" style="margin-top: 10px;">Crear Cliente</button>
+<!-- Mostrar tabla de clientes y formulario cuando se hace clic en "Ver Clientes" -->
+<div *ngIf="showClientsTable" style="margin-top: 10px;">
+  <app-tabla-clientes></app-tabla-clientes>
+</div>
+
+<div *ngIf="showCreateClient" style="margin-top: 10px">
+  <app-formulario-cliente></app-formulario-cliente>
+</div>
+
+<!-- Popup -->
+<div id="popup" class="ol-popup">
+  <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+  <div id="popup-content"></div>
+  <button id="move-client-btn" style="margin-top: 10px;">Mover Cliente</button>
+</div>
