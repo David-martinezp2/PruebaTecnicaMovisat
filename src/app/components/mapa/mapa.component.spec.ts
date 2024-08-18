@@ -1,23 +1,23 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { MapaComponent } from './mapa.component';
+import { MapaComponent } from './mapa.component'
 
 describe('MapaComponent', () => {
-  let component: MapaComponent;
-  let fixture: ComponentFixture<MapaComponent>;
+  let component: MapaComponent
+  let fixture: ComponentFixture<MapaComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [MapaComponent]
     })
-    .compileComponents();
+    .compileComponents()
 
-    fixture = TestBed.createComponent(MapaComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(MapaComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})
